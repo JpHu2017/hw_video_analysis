@@ -1,0 +1,9 @@
+prefix=/home/cvrsg1604/TestGround2018/cz-project-cpp/3rdparty-source/eigen-3.3.4/distribute
+exec_prefix=${prefix}
+
+Name: Eigen3
+Description: A C++ template library for linear algebra: vectors, matrices, and related algorithms
+Requires:
+Version: 3.3.4
+Libs:
+Cflags: -I${prefix}/include/eigen3

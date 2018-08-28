@@ -1,0 +1,10 @@
+SET(LIBRARY_NAME opencv)
+SET(LIBRARY_NAME_UPPER OPENCV)
+SET(LIBRARY_VERSION opencv-3.3.0)
+
+MESSAGE(${PATH_3RDPARTY}/${LIBRARY_VERSION})
+INCLUDE_DIRECTORIES(${PATH_3RDPARTY}/${LIBRARY_VERSION}/include)
+INCLUDE_DIRECTORIES(${PATH_3RDPARTY}/${LIBRARY_VERSION}/include/opencv)
+INCLUDE_DIRECTORIES(${PATH_3RDPARTY}/${LIBRARY_VERSION}/include/opencv2)
+LINK_DIRECTORIES(${PATH_3RDPARTY}/${LIBRARY_VERSION}/lib)
+SET(${LIBRARY_NAME_UPPER}_LIBS opencv_calib3d opencv_core opencv_dnn opencv_features2d opencv_flann opencv_highgui opencv_imgcodecs opencv_imgproc opencv_ml opencv_objdetect opencv_photo opencv_shape opencv_stitching opencv_superres opencv_video opencv_videoio opencv_videostab)

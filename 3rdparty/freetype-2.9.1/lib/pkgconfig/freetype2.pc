@@ -1,0 +1,14 @@
+prefix=/home/cvrsg1604/TestGround2018/cz-project-cpp/3rdparty-source/freetype-2.9.1/distribute
+exec_prefix=/home/cvrsg1604/TestGround2018/cz-project-cpp/3rdparty-source/freetype-2.9.1/distribute
+libdir=/home/cvrsg1604/TestGround2018/cz-project-cpp/3rdparty-source/freetype-2.9.1/distribute/lib
+includedir=/home/cvrsg1604/TestGround2018/cz-project-cpp/3rdparty-source/freetype-2.9.1/distribute/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 22.1.16
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
